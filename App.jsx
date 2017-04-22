@@ -9,7 +9,7 @@ class App extends React.Component {
     
    render() {
       return (
-          <div className="container">
+          <div>
               <div className="row">
                 <div className="col-md-2">
                     <Sidebar />

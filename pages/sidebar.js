@@ -14,10 +14,9 @@ class Sidebar extends React.Component{
         <ul className="nav nav-pills nav-stacked">
             
                     {this.props.data.map((val, i) => (
-                        <li role="presentation"><a>
+                        <li role="presentation">
                             <PersonIcon handleClick={this.handleClickHigher(val.id)} key={val.id} person={val}>
                             </PersonIcon>
-                            </a>
                         </li>), this)}
             
         </ul>
