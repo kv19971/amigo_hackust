@@ -5,21 +5,29 @@ import SidebarAction from '../actions/sidebar';
 
 
 class Sidebar extends React.Component{
-    handleClickHigher(name){
-        return () => {SidebarAction.changeUser(name);}
+    handleClickHigher(id){
+        return () => {SidebarAction.changeUser(id);}
     }
     render(){
-        return (<div>
-            <li>
-                {this.props.data.users.map((val, i) => (<PersonIcon handleClick={this.handleClickHigher(val.name)} key={val.id} person={val}></PersonIcon>), this)}
-            </li>
-        </div>);
+        alert(JSON.stringify(this.props))
+        return (
+        <ul className="nav nav-pills nav-stacked">
+            
+                    {this.props.data.map((val, i) => (
+                        <li role="presentation"><a>
+                            <PersonIcon handleClick={this.handleClickHigher(val.id)} key={val.id} person={val}>
+                            </PersonIcon>
+                            </a>
+                        </li>), this)}
+            
+        </ul>
+        );
     }
 
 }
 function mapStateToProps (store) {
     return {
-        data: store.sidebar
+        data: store.app.users
     };
 }
 

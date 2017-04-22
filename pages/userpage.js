@@ -2,9 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 class UserPage extends React.Component{
     render(){
+        var currentuser = this.props.data[this.props.params.id - 1];
+        alert(currentuser)
         return (<div>
                 <h1>
-                    Current user {this.props.params.id}
+                    Current user {currentuser.name}
                 </h1>
             </div>)
     }
@@ -12,7 +14,7 @@ class UserPage extends React.Component{
 
 function mapStateToProps (store) {
     return {
-        data: store.userpage
+        data: store.app.users
     };
 }
 
