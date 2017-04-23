@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://kv19971.github.io/app-name-here",
+  "homepage": "https://kv19971.github.io/amigo_hackust",
   "scripts": {
     "start": "webpack-dev-server --hot",
     "predeploy": "npm run build",
