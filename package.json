@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://kv19971.github.io/app-name-here",
   "scripts": {
     "start": "webpack-dev-server --hot"
   },
@@ -16,8 +17,12 @@
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
+    "recharts": "^0.22.3",
     "redux": "^3.6.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
   }
 }
