@@ -5,7 +5,10 @@
   "main": "index.js",
   "homepage": "https://kv19971.github.io/app-name-here",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  
   },
   "author": "",
   "license": "ISC",
