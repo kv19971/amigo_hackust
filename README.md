@@ -1,9 +1,6 @@
-# react-boilerplate
-
-##Listen up hoes
-
+# Amigo for hackust!
 Requirements: 
-npm and nodejs (duh)
+npm and nodejs 
 
 Steps to install and run: 
 
